@@ -1,0 +1,53 @@
+{
+    "rules": {
+        "comma-dangle": [
+            "error", {
+                "arrays": "ignore",
+                "objects": "only-multiline",
+                "imports": "ignore",
+                "exports": "ignore",
+                "functions": "never"
+            }
+        ],
+        "no-conditional-assignment": false,
+        "no-debugger": true,
+        "no-duplicate-case": 2,
+        "no-empty": true,
+        "no-extra-boolean-cast": 2,
+        "no-extra-semi": 2,
+        "no-inner-declarations": 2,
+        "no-invalid-regexp": 2,
+        "no-irregular-whitespace": true,
+        "valid-typeof": 2,
+        "curly": true,
+        "eqeqeq": [2, "allow-null"],
+        "jsx-quotes": [2, "prefer-double"],
+        "ban": true,
+        "no-eval": true,
+        "no-switch-case-fall-through": true,
+        "no-multi-spaces": [2, {
+            "ignoreEOLComments": true
+        }],
+        "ter-no-self-compare": 2,
+        "no-unused-expression": false,
+        "prefer-const": true,
+        "radix": true,
+        "ter-indent": [2, 4, {
+            "FunctionExpression": {
+                "parameters": "off"
+            },
+            "ignoredNodes": ["CallExpression", "ConditionalExpression"]
+        }],
+        "comma-spacing": [1, {"before": false, "after": true}],
+        "comma-style": [0, "last"],
+        "new-cap": [1, {"newIsCap": true, "capIsNew": false}],
+        "no-trailing-whitespace": true,
+        "no-multiple-empty-lines": [1, {"max": 2}],
+        "no-var-keyword": true,
+        "max-depth": [0, 3],
+        "max-params": [2, 5]
+    },
+    "rulesDirectory": [
+        "node_modules/tslint-eslint-rules/dist/rules"
+    ]
+}
